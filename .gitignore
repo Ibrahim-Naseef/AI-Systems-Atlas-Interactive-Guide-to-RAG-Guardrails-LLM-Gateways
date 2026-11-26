@@ -1,0 +1,26 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+.logfire/
+logfire_credentials.json
+*.pem
+*.key
+
+# Local environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Input documents and generated ingestion output
+DATA/
+processed_data/
+
+# Local tool and editor state
+.DS_Store
+.vscode/
