@@ -265,7 +265,6 @@ the providers' current terms and the costs of EC2, storage, and API usage.
 | [LLM gateway](DOCS/09_LLM_GATEWAY.md) | Portkey and model routing |
 | [Evals](DOCS/10_EVALS.md) | Evaluation concepts |
 | [Evals pipeline](DOCS/11_EVALS_PIPELINE.md) | Evaluation runner and UI |
-| [Architecture guide](ai_architecture_guide/README.md) | Interactive guide launch |
 
 ## Security reminder
 
