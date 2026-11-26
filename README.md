@@ -86,7 +86,7 @@ the ingestion examples.
 
 ## Requirements
 
-- Python 3.11 (the project has been run with Python 3.11)
+- Python 3.11 (pinned in `.python-version`; use the same major/minor locally and on the host)
 - Qdrant Cloud or a reachable Qdrant server
 - A Groq API key for chat generation and guardrails
 - A Gemini API key for hosted embeddings, unless using the local embedding
