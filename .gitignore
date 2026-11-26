@@ -2,6 +2,7 @@
 .env
 .env.*
 !.env.example
+!.env.sample
 .streamlit/secrets.toml
 .logfire/
 logfire_credentials.json

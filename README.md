@@ -120,38 +120,13 @@ pip install -r requirements.txt
 
 ## Environment configuration
 
-Create a private `.env` file in the repository root. Never commit it, paste
-credentials into issues, or include real keys in screenshots or logs.
+Copy `.env.sample` to `.env` in the repository root, then replace the `xxx`
+placeholders with your own values. Never commit `.env`, paste credentials into
+issues, or include real keys in screenshots or logs.
 
-```dotenv
-# Required for chat generation and NeMo Guardrails
-GROQ_API_KEY=replace_with_groq_api_key
-
-# Required for Qdrant access
-QDRANT_URL=https://your-cluster.example:6333
-QDRANT_API_KEY=replace_with_qdrant_api_key
-
-# Recommended for hosted embeddings; local fallback is used only if the
-# initial Gemini availability probe fails.
-GEMINI_API_KEY=replace_with_gemini_api_key
-
-# Optional model overrides (defaults shown)
-GROQ_MODEL=openai/gpt-oss-120b
-GROQ_FALLBACK_MODEL=openai/gpt-oss-20b
-
-# Optional: enable Portkey instead of the direct-Groq path.
-# Configure the "rag" and "brag" virtual-key aliases in Portkey as well.
-# PORTKEY_API_KEY=replace_with_portkey_api_key
-
-# Optional: use either a Logfire project write token or an API key that has
-# the project-scoped "Send telemetry" capability.
-# LOGFIRE_TOKEN=replace_with_logfire_project_write_token
-# LOGFIRE_API_KEY=replace_with_logfire_telemetry_api_key
-
-# Optional: LangSmith tracing. Leave false/unset unless the API key is valid.
-LANGSMITH_TRACING=false
-# LANGSMITH_API_KEY=replace_with_langsmith_api_key
-# LANGSMITH_PROJECT=your-project-name
+```bash
+cp .env.sample .env
+# Edit .env and replace the placeholders before starting the application.
 ```
 
 `QDRANT_CLUSTER_ENDPOINT` is also accepted as an alternative to `QDRANT_URL`.
